@@ -18,11 +18,11 @@ services:
 
     splash0:
         image: scrapinghub/splash:3.0
-        command: --max-timeout 3600 --slots 5 --maxrss 3000 --verbosity 1 --disable-lua-sandbox
+        command: --max-timeout 3600 --slots 5 --maxrss 2000 --verbosity 1 --disable-lua-sandbox
         expose:
             - 8050
-        mem_limit: 4200m
-        memswap_limit: 5400m
+        mem_limit: 2200m
+        memswap_limit: 2400m
         restart: always
     #   links:
     #       - tor
@@ -32,11 +32,11 @@ services:
 
     splash1:
         image: scrapinghub/splash:3.0
-        command: --max-timeout 3600 --slots 5 --maxrss 3000 --verbosity 1 --disable-lua-sandbox
+        command: --max-timeout 3600 --slots 5 --maxrss 2000 --verbosity 1 --disable-lua-sandbox
         expose:
             - 8050
-        mem_limit: 4200m
-        memswap_limit: 5400m
+        mem_limit: 2200m
+        memswap_limit: 2400m
         restart: always
     #   links:
     #       - tor
@@ -46,11 +46,11 @@ services:
 
     splash2:
         image: scrapinghub/splash:3.0
-        command: --max-timeout 3600 --slots 5 --maxrss 3000 --verbosity 1 --disable-lua-sandbox
+        command: --max-timeout 3600 --slots 5 --maxrss 2000 --verbosity 1 --disable-lua-sandbox
         expose:
             - 8050
-        mem_limit: 4200m
-        memswap_limit: 5400m
+        mem_limit: 2200m
+        memswap_limit: 2400m
         restart: always
     #    links:
     #        - tor
