@@ -24,8 +24,8 @@ services:
         mem_limit: 2200m
         memswap_limit: 2400m
         restart: always
-    #   links:
-    #       - tor
+        links:
+            - tor
         volumes:
             - ./proxy-profiles:/etc/splash/proxy-profiles:ro
             - ./filters:/etc/splash/filters:ro
@@ -38,8 +38,8 @@ services:
         mem_limit: 2200m
         memswap_limit: 2400m
         restart: always
-    #   links:
-    #       - tor
+        links:
+            - tor
         volumes:
             - ./proxy-profiles:/etc/splash/proxy-profiles:ro
             - ./filters:/etc/splash/filters:ro
@@ -52,18 +52,18 @@ services:
         mem_limit: 2200m
         memswap_limit: 2400m
         restart: always
-    #    links:
-    #        - tor
+         links:
+             - tor
         volumes:
             - ./proxy-profiles:/etc/splash/proxy-profiles:ro
             - ./filters:/etc/splash/filters:ro
 
-    #tor:
-    #    image: jess/tor-proxy
-    #    expose:
-    #        - 9050
-    #    logging:
-    #        driver: "none"
-    #    restart: always
+    tor:
+        image: jess/tor-proxy
+        expose:
+            - 9050
+        logging:
+            driver: "none"
+        restart: always
 
     
