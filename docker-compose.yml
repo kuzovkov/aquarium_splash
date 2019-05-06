@@ -17,7 +17,7 @@ services:
             - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
 
     splash0:
-        image: scrapinghub/splash:3.0
+        image: scrapinghub/splash:3.3
         command: --max-timeout 3600 --slots 5 --maxrss 2000 --verbosity 1 --disable-lua-sandbox
         expose:
             - 8050
@@ -31,7 +31,7 @@ services:
             - ./filters:/etc/splash/filters:ro
 
     splash1:
-        image: scrapinghub/splash:3.0
+        image: scrapinghub/splash:3.3
         command: --max-timeout 3600 --slots 5 --maxrss 2000 --verbosity 1 --disable-lua-sandbox
         expose:
             - 8050
@@ -45,7 +45,7 @@ services:
             - ./filters:/etc/splash/filters:ro
 
     splash2:
-        image: scrapinghub/splash:3.0
+        image: scrapinghub/splash:3.3
         command: --max-timeout 3600 --slots 5 --maxrss 2000 --verbosity 1 --disable-lua-sandbox
         expose:
             - 8050
