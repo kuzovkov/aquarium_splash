@@ -8,7 +8,7 @@ services:
             - "8036:8036"
 
             # splash
-            - "8050:8050"
+            - "8060:8050"
         links:
             - splash0
             - splash1
